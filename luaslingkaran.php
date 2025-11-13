@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Math;
-
 class LuasLingkaran {
 
     public const phi = 3.14;
-    private int $jari;
+    public int $jari;
     
     public function __construct($isiJari = 1) {
         $this->jari = $isiJari;
@@ -27,8 +25,8 @@ class LuasLingkaran {
     }
 }
 
-$lingkaran = new LuasLingkaran(10);
-//$lingkaran->jari = 10;
+$lingkaran = new LuasLingkaran(12);
+// $lingkaran->jari = 12;
 $lingkaran->tampil('roda'); //panggil method tampil
 
-//LuasLingkaran::testing(); //panggil static method
+LuasLingkaran::testing(); //panggil static method
